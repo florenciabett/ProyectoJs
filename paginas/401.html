@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../iconos/account_balance.png">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <title>Error 401</title>
+    <style>
+        img{
+            width: 600px;
+            height: 400px;
+        }
+        #contenedor{
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            margin-top: 2.5em;
+            flex-direction: column;
+            background: #f05897;
+            align-items: center;
+            padding-left: 4em;
+            padding-right: 4em;
+            border-radius: 10px;
+        }
+        body{
+            background: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+        <div id="contenedor">
+            <h2>Es necesario autenticar para obtener la respuesta solicitada.</h2>
+            <img src="../img/error.png" alt="Error de autenticacion">
+            <p>Espere unos segundos y será redireccionado a página principal.</p>
+        </div>
+    
+
+    <script>
+        setTimeout(() => {
+            location.replace('../index.html');
+          }, 8000);
+        
+    </script>
+    
+</body>
+</html>

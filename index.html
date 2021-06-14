@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,200&display=swap" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <title>Banco Argento</title>
+</head>
+<body>
+    <div id="contenedor">
+        <nav>
+            <img src="../HomeBanking-master/img/logo.png" alt="asd">
+            <ul>
+                <li><a href="empresas.html" class="nav__li-item">Empresas</a></li>
+                <li><a href="inversiones.html" class="nav__li-item">Inversiones</a></li>
+            </ul>
+        </nav>
+        <section id="main">
+               <div id="contenedor-imagen">
+                <img class="foto" src="img/hombre.jpg" alt="Imagen login">
+            </div>
+            <div id="login">
+                    <h1>Logueo</h1>
+                    <form action="" id="formulario__login">
+                        <div id="form__input-usuario">
+                            <div id="etiquetas__usuario">
+                                <label for="" id="label__usuario" class="white">Usuario </label>
+                                <div hidden = true id="error_usuario">Usuario Incorrecto </div>
+                            </div>
+                            <div class="input-icono personalizado1"  >
+                                <input type="text" name="input" placeholder=" Usuario" id="inputUsuario">
+                            </div>
+                        </div>
+                        <div id="form__boton-enviar">
+                            <button type="submit" id="btnUsuario">Entrar</button>
+                        </div>
+                    </form>
+                    <div id="links_opciones_usuario">
+                        <div>
+                            <a href="#" class="link__nuevo-usuario link">¿Necesita una cuenta?</a>
+                        </div>
+                    </div>
+            </div>
+         
+        </section>
+    </div>
+    <footer>
+        <div>
+            <p>Bancoargento.com.ar © copyright-2021 Todos los derechos reservados. </p>
+        </div>
+    </footer>
+
+    <script src="js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

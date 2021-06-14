@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../iconos/account_balance.png">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+    <title>Resumen de Movimientos</title>
+</head>
+<body> 
+    <div id="contenedor">
+        <nav>
+            <ul>
+                <li><a href="../paginas/home.html">Principal</a></li>
+                <li><a href="../paginas/resumen.html">Resumen</a></li>
+                <li><a href="../paginas/transferencias.html">Transferencias</a></li>
+                <li><a href="../paginas/help.html">Ayuda</a></li>
+            </ul>
+            <div id="contenedor__info-user">
+                <div class="datos__usuario" id="contenedor_datos_usuarios">
+                <div id="imagen__nav"> 
+                    <div id="cerrarSession"><img id="imagen_cerrar_sesion" src="../iconos/power_settings_new.png"></div>
+                </div>
+            </div>
+        </nav>
+        
+
+        <div id="contenido_tabla">
+            <div id="filtros">
+                <form id="formulario_filtrar" action="">
+                    <input id="input_campo_filtrar" type="text" placeholder="Filtrar por titulo o descripcion...">
+                </form>
+                <div class="cancelar_filtro" >
+                    <img  hidden=true src="../iconos/disabled_by_default.png" alt="Imagen Borrar Filtro">
+                    <p hidden=true style="color:#eb0089;">Cancelar Búsqueda</p>
+                </div>
+                
+            </div>
+            <div id="seccionPrincipal">
+                <div id="tabla">
+                    <table id="tabla__resumen">
+                    </table>
+                    <div id="contenedor_mostrar_mas">
+                        <p id="mostrar_mas" style="color:#eb0089;">Mostrar más datos</p>
+                    </div>
+                    
+                </div>
+                <div id="mas__informacion"></div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div>
+                <p>Bancoargento.com.ar © copyright-2021 Todos los derechos reservados. </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/resumen.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/completarCampos.js"></script>
+    
+
+</body>
+</html>

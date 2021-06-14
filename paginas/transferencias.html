@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../iconos/account_balance.png">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Transferencias</title>
+</head>
+<body>
+    <nav>
+        <img src="../img/logo.png" alt="logo">
+        <ul>
+            <li><a href="../paginas/home.html">Principal</a></li>
+            <li><a href="../paginas/resumen.html">Resumen</a></li>
+            <li><a href="../paginas/transferencias.html">Transferencias</a></li>
+            <li><a href="../paginas/help.html">Ayuda</a></li>
+        </ul>
+        <div id="contenedor__info-user">
+            <div class="datos__usuario" id="contenedor_datos_usuarios">
+                <div class="contenedor_item_datos">
+                    <p class="etiqueta_datos" style="display:none">Usuario</p>
+                    <p id="nombre__usuario" class="valor_datos"></p>
+                </div>
+                <div class="contenedor_item_datos">
+                    <p class="etiqueta_datos" style="display:none">N° Cuenta</p>
+                    <p id="idcuenta__usuario" class="valor_datos"></p>
+                </div>
+                <div class="contenedor_item_datos">
+                    <p class="etiqueta_datos" style="display:none">Saldo</p>
+                    <p id="saldo__usuario" class="valor_datos"></p>
+                </div>
+            </div>
+            <div id="imagen__nav"> 
+                <div id="cerrarSession"><img id="imagen_cerrar_sesion" src="../iconos/power_settings_new.png"></div>
+            </div>
+        </div>
+    </nav>
+    <div id="contenido">
+        <div id="contenedor__formulario">
+            <p>Realice una transferencia.</p>
+            <form id="formulario__transferencia" action="">
+                <div class="campo_formulario">
+                    <label for="">Nombre: </label>
+                    <input id="input__nombre" type="text" placeholder="Nombre">
+                    <i id="campo_obligatorio_nombre" hidden=true>El campo es obligatorio</i>
+                </div>
+                <div class="campo_formulario">
+                    <label for="">Apellido: </label>
+                    <input id="input__apellido" type="text" placeholder="Apellido">
+                    <i id="campo_obligatorio_apellido" hidden=true>El campo es obligatorio</i>
+                </div>
+                <div class="campo_formulario">
+                    <label for="">DNI:</label>
+                    <input id="input__dni" type="number" placeholder="DNI">
+                    <i id="campo_obligatorio_dni" hidden=true>El campo es obligatorio</i>
+                </div>
+                <div class="campo_formulario">
+                    <label for="">Numero de Cuenta: </label>
+                    <input id="input__nro-cuenta" type="number" placeholder="N° de cuenta">
+                    <i id="campo_obligatorio_nro-cuenta" hidden=true>El campo es obligatorio</i>
+                </div>
+                <div class="campo_formulario">
+                    <label for="">CBU</label>
+                    <input id="input__cbu" type="number" placeholder="CBU">
+                    <i id="campo_no_valido_cbu" hidden=true>CBU no valido</i>
+                    <i id="campo_obligatorio_cbu" hidden=true>El campo es obligatorio</i>
+                </div>
+                <div class="campo_formulario">
+                    <label for="">Monto</label>
+                    <input id="input__monto" type="number" placeholder="Monto">
+                    <i id="campo_no_valido_monto" hidden=true>Monto no valido</i>
+                    <i id="campo_obligatorio_monto" hidden=true>El campo es obligatorio</i>
+                    <i id="monto_insuficiente" hidden=true>No tiene saldo suficiente</i>
+                </div>
+                <div id="contenedor__boton">
+                <button id="boton_realiazar_transferencia"  type="submit" style="background: #eb0089!important;
+                color: rgb(255, 255, 255)!important;
+                border-radius: 7px!important;
+                width: 120px!important;
+                height: 30px !important;
+                border: whitesmoke solid 1px!important;
+                font-size: 13px!important;">Transferir</button>
+                </div>
+            </form>
+
+
+            <div id="exito">
+                <i id="transaccion_completada" hidden="true">Operación completada satisfactoriamente.</i>
+            </div>
+            
+        </div>
+        <div id="contenedor_imagen">
+            <img id="imagen_transferencia" src="../img/tramsferemcia.jpg" alt="Imagen transferencia">
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>Bancoargento.com.ar © copyright-2021 Todos los derechos reservados. </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/transferencias.js"></script>
+    <script src="../js/cargarMovimientos.js"></script>
+    <script src="../js/completarCampos.js"></script>
+    <script src="../js/logout.js"></script>
+    
+    
+</body>
+</html>

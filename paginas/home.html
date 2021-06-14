@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../iconos/account_balance.png">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <div id="contenedor">
+        <nav>
+            <img src="../img/logo.png" alt="logo">
+            <ul>
+                <li><a href="../paginas/home.html">Principal</a></li>
+                <li><a href="../paginas/resumen.html">Resumen</a></li>
+                <li><a href="../paginas/transferencias.html">Transferencias</a></li>
+                <li><a href="../paginas/help.html">Ayuda</a></li>
+            </ul>
+            <div id="contenedor__info-user">
+                <div class="datos__usuario" id="contenedor_datos_usuarios">
+                    <div class="contenedor_item_datos">
+                        <p class="etiqueta_datos" style="display:none">Usuario</p>
+                        <p id="nombre__usuario" class="valor_datos"></p>
+                    </div>
+                    <div class="contenedor_item_datos">
+                        <p class="etiqueta_datos" style="display:none">N° Cuenta</p>
+                        <p id="idcuenta__usuario" class="valor_datos"></p>
+                    </div>
+                    <div class="contenedor_item_datos">
+                        <p class="etiqueta_datos" style="display:none">Saldo</p>
+                        <p id="saldo__usuario" class="valor_datos"></p>
+                    </div>
+                </div>
+                <div id="imagen__nav"> 
+                    <div id="cerrarSession"><img id="imagen_cerrar_sesion" src="../iconos/power_settings_new.png"></div>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="contenido">
+            <img src="../img/undraw_online_payments_luau.png" alt="Imagen usuario" id="imagen__contenido">
+            <div id="infoPersonal">
+                <h2>Informacion de Usuario</h2>
+                <div>
+                    <p id="nombre"></p>
+                    <p id="apellido"></p>
+                    <p id="email"></p>
+                    <p id="telefono"></p>
+                    <p id="fecha__nac"></p>
+                    <p id="domicilio_calle"></p>
+                    <p id="domicilio_numero"></p>
+                    <p id="estado"></p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <p>Bancoargento.com.ar © copyright-2021 Todos los derechos reservados. </p>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/completarCampos.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/logout.js"></script>
+   
+    
+</body>
+</html>
